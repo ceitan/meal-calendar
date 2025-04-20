@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Copiar los archivos necesarios al contenedor
 COPY package.json ./
-COPY index.js ./
+COPY src/ /app/src/
 
 # Instalar dependencias
 RUN npm install
