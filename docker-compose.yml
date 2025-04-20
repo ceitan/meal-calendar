@@ -1,0 +1,11 @@
+version: '3'
+services:
+  node-app:
+    build: .
+    ports:
+      - "3232:3232"
+    networks:
+      - lan-network
+networks:
+  lan-network:
+    driver: bridge
